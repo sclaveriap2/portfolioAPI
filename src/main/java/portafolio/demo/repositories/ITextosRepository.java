@@ -1,4 +1,11 @@
 package portafolio.demo.repositories;
 
-public interface ITextosRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import portafolio.demo.models.TextosModel;
+
+@Repository
+public interface ITextosRepository extends JpaRepository<TextosModel, Long> {
+    
+
 }
