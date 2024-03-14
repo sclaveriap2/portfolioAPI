@@ -20,7 +20,6 @@ public class TextosController {
     public ArrayList<TextosModel> getTextos(){
         return this.textosService.getTextos();
     }
-
     @PostMapping("/guardar-texto")
     public TextosModel saveTexto(@RequestBody TextosModel texto){
         return this.textosService.saveTexto(texto);

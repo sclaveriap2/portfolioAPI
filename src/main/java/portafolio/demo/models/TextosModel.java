@@ -6,11 +6,12 @@ import jakarta.persistence.*;
 @Table (name= "textos")
 public class TextosModel {
     @Id
+    @Column(name = "id_texto")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
+    @Column(name = "texto")
     private String texto;
-    @Column
+    @Column(name = "tipo_texto")
     private String tipo_texto;
 
     public TextosModel(){
