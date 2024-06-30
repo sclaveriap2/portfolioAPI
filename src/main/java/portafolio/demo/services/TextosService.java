@@ -33,7 +33,7 @@ public class TextosService {
         return texto;
     }
 
-    public Boolean deleteTexto(Long id){
+    public boolean deleteTexto(Long id){
         try{
             textosRepository.deleteById(id);
             return true;
